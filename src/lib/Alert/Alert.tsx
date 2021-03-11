@@ -13,7 +13,7 @@ import {
   AlertWarning,
 } from "./AlertTypes";
 
-interface IProps {
+export interface IProps {
   type?: string;
   text: string;
   style?: React.CSSProperties;

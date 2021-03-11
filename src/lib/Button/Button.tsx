@@ -7,7 +7,7 @@ import {
 } from "./ButtonTypes";
 import styled from "styled-components";
 
-interface IProps {
+export interface IProps {
   style?: React.CSSProperties;
   color?: string;
   text: string;

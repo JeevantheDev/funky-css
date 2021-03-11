@@ -6,7 +6,7 @@
 .pnp.js
 
 /dist
-/app.tsx
+/githubaccesstoken.txt
 
 # testing
 /coverage

@@ -2,47 +2,43 @@ import React from "react";
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from "@storybook/react/types-6-0";
 
-// import { Button, ButtonProps } from './Button';
-import Button, { IProps } from "../lib/Button/Button";
+import Alert, { IProps } from "../lib/Alert/Alert";
 
 export default {
-  title: "Example/Button",
-  component: Button,
+  title: "Example/Alert",
+  component: Alert,
 } as Meta;
 
-const Template: Story<IProps> = (args) => <Button {...args} />;
+const Template: Story<IProps> = (args) => <Alert {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  color: "primary",
-  text: "Primary Button",
-  onClick: () => {
-    alert("Button clicked");
-  },
+  type: "primary",
+  text: "Primary Alert",
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  color: "success",
-  text: "Success Button",
+  type: "success",
+  text: "Success Alert",
   style: { color: "red" },
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
-  color: "danger",
-  text: "Danger Button",
+  type: "danger",
+  text: "Danger Alert",
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
-  color: "warning",
-  text: "Warning Button",
+  type: "warning",
+  text: "Warning Alert",
 };
 
 export const Random = Template.bind({});
 Random.args = {
-  color: "primary",
-  text: "Random Button",
+  type: "primary",
+  text: "Random Alert",
   style: { backgroundColor: "#333" },
 };

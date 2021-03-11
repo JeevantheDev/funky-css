@@ -1,7 +1,7 @@
 import React, { ReactChildren, ReactChild } from "react";
 import styled from "styled-components";
 
-interface IProps {
+export interface IProps {
   style?: React.CSSProperties;
   m?: number;
   mt?: number;
@@ -14,8 +14,8 @@ interface IProps {
   pl?: number;
   pr?: number;
   color?: string;
-  h: number;
-  w: number;
+  h: string | "auto";
+  w: string | "auto";
   flexDirection?: string;
   justifyContent?: string;
   alignItems?: string;
@@ -49,8 +49,8 @@ const Flex: React.FC<IProps> = ({
   style,
 }) => {
   const Flexbox = styled.div`
-    width: ${w}%;
-    height: ${h}%;
+    width: ${w};
+    height: ${h};
     background-color: ${color};
     margin: ${m}px;
     margin-top: ${mt}px;

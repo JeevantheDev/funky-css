@@ -8,7 +8,7 @@ enum VARIANT {
   warning = "warning",
 }
 
-interface IProps {
+export interface IProps {
   m?: number;
   mt?: number;
   mb?: number;
@@ -20,9 +20,10 @@ interface IProps {
   pl?: number;
   pr?: number;
   color?: VARIANT | string;
-  h?: number | "auto";
-  w?: number;
+  h?: string | "auto";
+  w?: string;
   flex?: number;
+  alignSelf?: string;
   start?: number;
   rowEnd?: number;
   colEnd?: number;
@@ -45,6 +46,7 @@ const Box: React.FC<IProps> = ({
   pl,
   pr,
   flex,
+  alignSelf,
   start,
   rowEnd,
   colEnd,
@@ -52,10 +54,9 @@ const Box: React.FC<IProps> = ({
   children,
 }) => {
   // console.log(color);
-  console.log(VARIANT.primary);
   const Box = styled.div`
-    width: ${w}%;
-    height: ${h}%;
+    width: ${w};
+    height: ${h};
     ${(props) => {
       switch (color) {
         case VARIANT.primary:
@@ -92,6 +93,7 @@ const Box: React.FC<IProps> = ({
     padding-left: ${pl}px;
     padding-right: ${pr}px;
     flex: ${flex};
+    align-self: ${alignSelf};
     grid-row: ${start} / ${rowEnd};
     grid-column: ${start} / ${colEnd};
   `;

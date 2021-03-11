@@ -1,18 +1,18 @@
 import React, { ReactChildren, ReactChild } from "react";
 import styled from "styled-components";
 
-interface IProps {
+export interface IProps {
   templateColumns?: string;
   templateRows?: string;
   gap?: number;
-  h?: number | "auto";
-  w?: number | "auto";
+  h?: string | "auto";
+  w?: string | "auto";
   bg?: string;
   children?: ReactChild | ReactChildren;
   style?: React.CSSProperties;
 }
 
-export const Grid: React.FC<IProps> = ({
+const Grid: React.FC<IProps> = ({
   templateColumns,
   templateRows,
   gap,
@@ -28,10 +28,12 @@ export const Grid: React.FC<IProps> = ({
     grid-template-columns: ${templateColumns};
     grid-template-rows: ${templateRows};
     grid-gap: ${gap}px;
-    width: ${w}%;
-    height: ${h}%;
+    width: ${w};
+    height: ${h};
     background-color: ${bg};
   `;
 
   return <Grid style={style}>{children}</Grid>;
 };
+
+export default Grid;
