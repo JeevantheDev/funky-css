@@ -18,7 +18,7 @@ Card.args = {
   color: "primary",
   w: "25vw",
   h: "60vh",
-  style: { color: "white" },
+  style: { color: "white", overflow: "hidden" },
   children: [
     <>
       <Flex
@@ -51,7 +51,7 @@ Card.args = {
               alignItems="center"
             >
               <>
-                <h3>Hello Warning Box</h3>
+                <h3>Hello Primary Box</h3>
                 <Button color="primary" text="Primary" />
               </>
             </Flex>

@@ -19,7 +19,7 @@ GridBox.args = {
   gap: 5,
   style: { backgroundColor: "cyan" },
   w: "100%",
-  h: "100%",
+  h: "100vh",
   children: [
     <>
       <Box start={1} colEnd={6} color="warning">
