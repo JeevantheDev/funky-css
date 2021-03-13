@@ -164,6 +164,76 @@ To start using the components, please follow these steps:
       | colEnd    | number         | `Give column end value when using in Grid component`                                                                         | `true`   |
       | style     | CSS Properties | `CSS Properties`                                                                                                             | `true`   |
 
+4.  ### Flex
+
+    - ### Example
+
+      ```javascript
+      import { Box, Flex } from "@jeevanthedev/funky-css";
+
+      function Example() {
+        return (
+          <Flex
+            alignItems="center"
+            h={100}
+            justifyContent="space-evenly"
+            w={100}
+          >
+            <React.Fragment key=".0">
+              <Box color="primary" flex={1} h={20} m={5} w={50}>
+                <h3>Hello Primary Box</h3>
+              </Box>
+              <Box color="success" flex={2} h={20} m={5} w={50}>
+                <h3>Hello Success Box</h3>
+              </Box>
+              <Box
+                flex={1}
+                h={20}
+                m={5}
+                style={{
+                  backgroundColor: "cyan",
+                  color: "white",
+                }}
+                w={50}
+              >
+                <h3>Hello Random Box</h3>
+              </Box>
+              <Box color="danger" flex={2} h={20} m={5} w={50}>
+                <h3>Hello Danger Box</h3>
+              </Box>
+              <Box color="warning" flex={1} h={20} m={5} w={50}>
+                <h3>Hello Warning Box</h3>
+              </Box>
+            </React.Fragment>
+          </Flex>
+        );
+      }
+      ```
+
+    - ### Props
+
+      | Name          | Type           | Description                                                                                                                            | Optional |
+      | ------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+      | w             | string         | `Give the Box Width eg. 10%`                                                                                                           | `false`  |
+      | h             | string         | `Give the box height eg. 10%`                                                                                                          | `false`  |
+      | m             | number         | `Give margin value`                                                                                                                    | `true`   |
+      | mt            | number         | `Give margin top value`                                                                                                                | `true`   |
+      | mb            | number         | `Give margin bottom value`                                                                                                             | `true`   |
+      | ml            | number         | `Give margin left value`                                                                                                               | `true`   |
+      | mr            | number         | `Give margin right value`                                                                                                              | `true`   |
+      | p             | number         | `Give padding value`                                                                                                                   | `true`   |
+      | pt            | number         | `Give padding top value`                                                                                                               | `true`   |
+      | pb            | number         | `Give padding bottom value`                                                                                                            | `true`   |
+      | pl            | number         | `Give padding left value`                                                                                                              | `true`   |
+      | pr            | number         | `Give padding right value`                                                                                                             | `true`   |
+      | flexDirection | string         | `Give the flex direction property eg. row, row-reverse, column, column-reverse`                                                        | `true`   |
+      | jutifyContent | string         | `Give the flex justify content Property eg. flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit` | `true`   |
+      | style         | CSS Properties | `CSS Properties`                                                                                                                       | `true`   |
+      | alignItems    | string         | `Give the flex align items Property eg. stretch, flex-start, flex-end, center, baseline, initial, inherit`                             | `true`   |
+      | alignContent  | string         | `Give the flex align content Property eg. stretch, flex-start, flex-end, center, baseline, initial, inherit`                           | `true`   |
+      | flexWrap      | string         | `Give the flex wrap Property eg. wrap, no-wrap, wrap-reverse, initial, inherit`                                                        | `true`   |
+      | style         | CSS Properties | `CSS Properties`                                                                                                                       | `true`   |
+
 ## Available Scripts
 
 In the project directory, you can run:
