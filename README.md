@@ -1,6 +1,64 @@
 <h1 align="center">Funky <span>CSS</span></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), Storybook and Typescript.
+<p align="center">
+    This project was bootstrapped with Create React App, Storybook and Typescript.
+</p>
+
+## Installing Funky CSS
+
+---
+
+To use Funky CSS components, all you need to do is install the @jeevanthedev/funky-css@<`version`> package and its peer dependencies:
+
+```
+npm install @jeevanthedev/funky-css@0.2.2 --registry=https://npm.pkg.github.com
+```
+
+## Usage
+
+---
+
+To start using the components, please follow these steps:
+
+1. Create a theme.js file to create your theme.
+   ```javascript
+   export const theme = {
+     fontSource: "https://fonts.googleapis.com/css?family=Poppins:400,600",
+     fontFamily: "Poppins, sans-serif",
+     palette: {
+       common: {
+         black: "#222831",
+         white: "#fff",
+       },
+       primary: {
+         main: "#19456b",
+         contrastText: "#ffffff",
+       },
+       success: {
+         main: "#27aa80",
+         contrastText: "#ffffff",
+       },
+       danger: {
+         main: "#ef4f4f",
+         contrastText: "#ffffff",
+       },
+       warning: {
+         main: "#f77f00",
+         contrastText: "#ffffff",
+       },
+     },
+   };
+   ```
+2. Import theme in App.js and wrap it with ThemeProvider.
+
+   ```javascript
+   import { ThemeProvider } from "styled-components";
+   import { theme } from "./theme";
+
+   function App() {
+     return <ThemeProvider theme={theme}>...</ThemeProvider>;
+   }
+   ```
 
 ## Available Scripts
 
