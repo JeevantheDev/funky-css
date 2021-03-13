@@ -1,6 +1,6 @@
 <h1 align="center">Funky <span>CSS</span></h1>
 
-This project was bootstrapped with
+> This project was bootstrapped with
 Create React App
 <img align="center" src="assets/cra.png" width="30">,
 Storybook
