@@ -1,15 +1,20 @@
 <h1 align="center">Funky <span>CSS</span></h1>
 
-<p align="center">
-    This project was bootstrapped with Create React App, Storybook and Typescript.
-</p>
+This project was bootstrapped with
+Create React App
+<img align="center" src="assets/cra.png" width="30">,
+Storybook
+<img align="center" src="assets/storybook.png" width="30">,
+Typescript <img align="center" src="assets/typescript.png" width="30">
+and
+Styled-Components <img align="center" src="assets/styled-components.png" width="30">.
 
 ## Installing Funky CSS
 
 To use Funky CSS components, all you need to do is install the @jeevanthedev/funky-css@<`version`> package and its peer dependencies:
 
 ```
-npm install @jeevanthedev/funky-css@0.2.2 --registry=https://npm.pkg.github.com
+npm install @jeevanthedev/funky-css@<version> --registry=https://npm.pkg.github.com
 ```
 
 ## Usage
