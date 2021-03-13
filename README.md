@@ -73,14 +73,54 @@ To start using the components, please follow these steps:
 
 ## Components
 
-1. ### Button
-   - ### Props
-     | Name    | Type           | Description                                                           | Optional |
-     | ------- | -------------- | --------------------------------------------------------------------- | -------- |
-     | color   | String         | `primary`, `success`, `warning`, `danger`                             | `false`  |
-     | text    | String         | `any text value to show eg. <Button color="primary" text="Submit" />` | `false`  |
-     | onClick | Function       | `define your own function`                                            | `true`   |
-     | style   | CSS Properties | `CSS Properties`                                                      | `true`   |
+1.  ### Button
+
+    - ### Example
+
+      ```javascript
+      import { Button } from "@jeevanthedev/funky-css";
+
+      function Example() {
+        return (
+          <Button
+            color="primary"
+            text="Submit"
+            onClick={() => {
+              alert("Button clicked");
+            }}
+          />
+        );
+      }
+      ```
+
+    - ### Props
+
+      | Name    | Type           | Description                                                           | Optional |
+      | ------- | -------------- | --------------------------------------------------------------------- | -------- |
+      | color   | String         | `primary`, `success`, `warning`, `danger`                             | `false`  |
+      | text    | String         | `any text value to show eg. <Button color="primary" text="Submit" />` | `false`  |
+      | onClick | Function       | `define your own function`                                            | `true`   |
+      | style   | CSS Properties | `CSS Properties`                                                      | `true`   |
+
+2.  ### Alert
+
+    - ### Example
+
+      ```javascript
+      import { Alert } from "@jeevanthedev/funky-css";
+
+      function Example() {
+        return <Alert type="primary" text="Submit" />;
+      }
+      ```
+
+    ### Props
+
+    | Name  | Type           | Description                               | Optional |
+    | ----- | -------------- | ----------------------------------------- | -------- |
+    | type  | String         | `primary`, `success`, `warning`, `danger` | `false`  |
+    | text  | String         | `any text value to show`                  | `false`  |
+    | style | CSS Properties | `CSS Properties`                          | `true`   |
 
 ## Available Scripts
 
