@@ -14,7 +14,7 @@ Styled-Components <img align="center" src="assets/styled-components.png" width="
 To use Funky CSS components, all you need to do is install the @jeevanthedev/funky-css@<`version`> package and its peer dependencies:
 
 ```
-npm install @jeevanthedev/funky-css@<version> --registry=https://npm.pkg.github.com
+$ npm install @jeevanthedev/funky-css@<version> --registry=https://npm.pkg.github.com
 ```
 
 ## Usage
