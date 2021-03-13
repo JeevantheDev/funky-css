@@ -6,8 +6,6 @@
 
 ## Installing Funky CSS
 
----
-
 To use Funky CSS components, all you need to do is install the @jeevanthedev/funky-css@<`version`> package and its peer dependencies:
 
 ```
@@ -15,8 +13,6 @@ npm install @jeevanthedev/funky-css@0.2.2 --registry=https://npm.pkg.github.com
 ```
 
 ## Usage
-
----
 
 To start using the components, please follow these steps:
 
