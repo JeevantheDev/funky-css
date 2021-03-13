@@ -234,6 +234,59 @@ To start using the components, please follow these steps:
       | flexWrap      | string         | `Give the flex wrap Property eg. wrap, no-wrap, wrap-reverse, initial, inherit`                                                        | `true`   |
       | style         | CSS Properties | `CSS Properties`                                                                                                                       | `true`   |
 
+5.  ### Grid
+
+    - ### Example
+
+      ```javascript
+      import { Box, Grid } from "@jeevanthedev/funky-css";
+
+      function Example() {
+        return (
+          <Grid
+            gap={5}
+            h="100vh"
+            style={{
+              backgroundColor: "cyan",
+            }}
+            templateColumns="repeat(5, 1fr)"
+            templateRows="repeat(3, 1fr)"
+            w="100%"
+          >
+            <React.Fragment key=".0">
+              <Box colEnd={6} color="warning" start={1}>
+                <h3>Hello Warning Box</h3>
+              </Box>
+              <Box colEnd={1} color="primary" rowEnd={4} start={2}>
+                <h3>Hello Primary Box</h3>
+              </Box>
+              <Box colEnd={4} color="success" start={2}>
+                <h3>Hello Success Box</h3>
+              </Box>
+              <Box colEnd={6} color="primary" start={4}>
+                <h3>Hello Random Box</h3>
+              </Box>
+              <Box colEnd={6} color="danger" start={2}>
+                <h3>Hello Danger Box</h3>
+              </Box>
+            </React.Fragment>
+          </Grid>
+        );
+      }
+      ```
+
+    - ### Props
+
+      | Name            | Type           | Description                                                   | Optional |
+      | --------------- | -------------- | ------------------------------------------------------------- | -------- |
+      | w               | string         | `Give the Box Width eg. 10%`                                  | `false`  |
+      | h               | string         | `Give the box height eg. 10%`                                 | `false`  |
+      | templateRows    | string         | `Give template rows value for a grid eg. "repeat(3, 1fr)"`    | `false`  |
+      | templateColumns | string         | `Give template columns value for a grid eg. "repeat(5, 1fr)"` | `false`  |
+      | gap             | number         | `Give gap value for a grid.`                                  | `false`  |
+      | bg              | string         | `Give any background color`                                   | `true`   |
+      | style           | CSS Properties | `CSS Properties`                                              | `true`   |
+
 ## Available Scripts
 
 In the project directory, you can run:
