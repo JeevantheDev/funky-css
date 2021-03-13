@@ -1,24 +1,4 @@
-<style>{
-    `
-        .topHeading {
-            color: #19456b;
-            font-size: 30px;
-            font-weight: 900;
-        }
-        .topHeading h1 {
-            text-align: center;
-
-        }
-        .topHeading h1 span {
-            color: #ef4f4f;
-        }
-    `
-}
-</style>
-
-<div className="topHeading">
-    <h1>Funky <span>CSS</span></h1>
-</div>
+<h1 align="center">Funky <span>CSS</span></h1>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), Storybook and Typescript.
 
