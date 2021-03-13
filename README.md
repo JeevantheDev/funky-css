@@ -56,6 +56,16 @@ To start using the components, please follow these steps:
    }
    ```
 
+3. Now you can start using components like so!:
+
+   ```javascript
+   import { Button } from "@jeevanthedev/funky-css";
+
+   function Example() {
+     return <Button color="primary" text="Submit" />;
+   }
+   ```
+
 ## Available Scripts
 
 In the project directory, you can run:
