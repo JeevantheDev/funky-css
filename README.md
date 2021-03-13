@@ -1,13 +1,13 @@
 <h1 align="center">Funky <span>CSS</span></h1>
 
 > This project was bootstrapped with
-Create React App
-<img align="center" src="assets/cra.png" width="30">,
-Storybook
-<img align="center" src="assets/storybook.png" width="30">,
-Typescript <img align="center" src="assets/typescript.png" width="30">
-and
-Styled-Components <img align="center" src="assets/styled-components.png" width="30">.
+> Create React App
+> <img align="center" src="assets/cra.png" width="30">,
+> Storybook
+> <img align="center" src="assets/storybook.png" width="30">,
+> Typescript <img align="center" src="assets/typescript.png" width="30">
+> and
+> Styled-Components <img align="center" src="assets/styled-components.png" width="30">.
 
 ## Installing Funky CSS
 
@@ -70,6 +70,17 @@ To start using the components, please follow these steps:
      return <Button color="primary" text="Submit" />;
    }
    ```
+
+## Components
+
+1. ### Button
+   - ### Props
+     | Name    | Type           | Description                                                           | Optional |
+     | ------- | -------------- | --------------------------------------------------------------------- | -------- |
+     | color   | String         | `primary`, `success`, `warning`, `danger`                             | `false`  |
+     | text    | String         | `any text value to show eg. <Button color="primary" text="Submit" />` | `false`  |
+     | onClick | Function       | `define your own function`                                            | `true`   |
+     | style   | CSS Properties | `CSS Properties`                                                      | `true`   |
 
 ## Available Scripts
 
