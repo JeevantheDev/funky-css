@@ -214,8 +214,8 @@ To start using the components, please follow these steps:
 
       | Name          | Type           | Description                                                                                                                            | Optional |
       | ------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-      | w             | string         | `Give the Box Width eg. 10%`                                                                                                           | `false`  |
-      | h             | string         | `Give the box height eg. 10%`                                                                                                          | `false`  |
+      | w             | string         | `Give the Box Width eg. 100%`                                                                                                          | `false`  |
+      | h             | string         | `Give the box height eg. 100%`                                                                                                         | `false`  |
       | m             | number         | `Give margin value`                                                                                                                    | `true`   |
       | mt            | number         | `Give margin top value`                                                                                                                | `true`   |
       | mb            | number         | `Give margin bottom value`                                                                                                             | `true`   |
@@ -279,8 +279,8 @@ To start using the components, please follow these steps:
 
       | Name            | Type           | Description                                                   | Optional |
       | --------------- | -------------- | ------------------------------------------------------------- | -------- |
-      | w               | string         | `Give the Box Width eg. 10%`                                  | `false`  |
-      | h               | string         | `Give the box height eg. 10%`                                 | `false`  |
+      | w               | string         | `Give the Box Width eg. 100%`                                 | `false`  |
+      | h               | string         | `Give the box height eg. 100vh`                               | `false`  |
       | templateRows    | string         | `Give template rows value for a grid eg. "repeat(3, 1fr)"`    | `false`  |
       | templateColumns | string         | `Give template columns value for a grid eg. "repeat(5, 1fr)"` | `false`  |
       | gap             | number         | `Give gap value for a grid.`                                  | `false`  |

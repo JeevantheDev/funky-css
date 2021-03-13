@@ -14,8 +14,8 @@ const Template: Story<FlexProps> = (args) => <Flex {...args} />;
 
 export const Flexbox = Template.bind({});
 Flexbox.args = {
-  w: 100,
-  h: 100,
+  w: "100%",
+  h: "100%",
   justifyContent: "space-evenly",
   alignItems: "center",
   children: [
