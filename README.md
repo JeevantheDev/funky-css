@@ -97,9 +97,9 @@ To start using the components, please follow these steps:
 
       | Name    | Type           | Description                                                           | Optional |
       | ------- | -------------- | --------------------------------------------------------------------- | -------- |
-      | color   | String         | `primary`, `success`, `warning`, `danger`                             | `false`  |
-      | text    | String         | `any text value to show eg. <Button color="primary" text="Submit" />` | `false`  |
-      | onClick | Function       | `define your own function`                                            | `true`   |
+      | color   | string         | `primary`, `success`, `warning`, `danger`                             | `false`  |
+      | text    | string         | `any text value to show eg. <Button color="primary" text="Submit" />` | `false`  |
+      | onClick | function       | `define your own function`                                            | `true`   |
       | style   | CSS Properties | `CSS Properties`                                                      | `true`   |
 
 2.  ### Alert
@@ -114,13 +114,55 @@ To start using the components, please follow these steps:
       }
       ```
 
-    ### Props
+    - ### Props
 
-    | Name  | Type           | Description                               | Optional |
-    | ----- | -------------- | ----------------------------------------- | -------- |
-    | type  | String         | `primary`, `success`, `warning`, `danger` | `false`  |
-    | text  | String         | `any text value to show`                  | `false`  |
-    | style | CSS Properties | `CSS Properties`                          | `true`   |
+      | Name  | Type           | Description                               | Optional |
+      | ----- | -------------- | ----------------------------------------- | -------- |
+      | type  | string         | `primary`, `success`, `warning`, `danger` | `false`  |
+      | text  | string         | `any text value to show`                  | `false`  |
+      | style | CSS Properties | `CSS Properties`                          | `true`   |
+
+3.  ### Box
+
+    - ### Example
+
+      ```javascript
+      import { Box } from "@jeevanthedev/funky-css";
+
+      function Example() {
+        return (
+          <Box color="primary" h="20%" w="10%">
+            <React.Fragment>
+              <h3>Hello Primary Box</h3>
+            </React.Fragment>
+          </Box>
+        );
+      }
+      ```
+
+    - ### Props
+
+      | Name      | Type           | Description                                                                                                                  | Optional |
+      | --------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------- |
+      | color     | string         | `primary`, `success`, `warning`, `danger`                                                                                    | `false`  |
+      | w         | string         | `Give the Box Width eg. 10%`                                                                                                 | `false`  |
+      | h         | string         | `Give the box height eg. 10%`                                                                                                | `false`  |
+      | m         | number         | `Give margin value`                                                                                                          | `true`   |
+      | mt        | number         | `Give margin top value`                                                                                                      | `true`   |
+      | mb        | number         | `Give margin bottom value`                                                                                                   | `true`   |
+      | ml        | number         | `Give margin left value`                                                                                                     | `true`   |
+      | mr        | number         | `Give margin right value`                                                                                                    | `true`   |
+      | p         | number         | `Give padding value`                                                                                                         | `true`   |
+      | pt        | number         | `Give padding top value`                                                                                                     | `true`   |
+      | pb        | number         | `Give padding bottom value`                                                                                                  | `true`   |
+      | pl        | number         | `Give padding left value`                                                                                                    | `true`   |
+      | pr        | number         | `Give padding right value`                                                                                                   | `true`   |
+      | flex      | number         | `Give Flex value when using in Flex Component eg. <Box flex={1}>...</Box>`                                                   | `true`   |
+      | alignSelf | string         | `Give align property when using in Flex Component eg. auto, center,stretch,flex-start, flex-end, baseline, initiall,inherit` | `true`   |
+      | start     | number         | `Give row or column start value when using in Gridcomponent`                                                                 | `true`   |
+      | rowEnd    | number         | `Give row end value when using in Grid component`                                                                            | `true`   |
+      | colEnd    | number         | `Give column end value when using in Grid component`                                                                         | `true`   |
+      | style     | CSS Properties | `CSS Properties`                                                                                                             | `true`   |
 
 ## Available Scripts
 
