@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+<style>{
+    `
+        .topHeading {
+            color: #19456b;
+            font-size: 30px;
+            font-weight: 900;
+        }
+        .topHeading h1 {
+            text-align: center;
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+        }
+        .topHeading h1 span {
+            color: #ef4f4f;
+        }
+    `
+}
+</style>
+
+<div className="topHeading">
+    <h1>Funky <span>CSS</span></h1>
+</div>
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), Storybook and Typescript.
 
 ## Available Scripts
 

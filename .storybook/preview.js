@@ -1,7 +1,6 @@
 import { addDecorator } from "@storybook/react";
 import { withThemesProvider } from "storybook-addon-styled-component-theme";
 export const theme1 = {
-  borderRadius: "4px",
   fontSource: "https://fonts.googleapis.com/css?family=Poppins:400,600",
   fontFamily: "Poppins, sans-serif",
   palette: {
