@@ -1,8 +1,4 @@
 {
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    ],
     "parser": "@typescript-eslint/parser",
     "plugins": [
         "@typescript-eslint", "eslint-plugin-import"
@@ -16,5 +12,9 @@
           ],
           "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": true }],
           "no-console": "warn"
-    }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    ]
 }
