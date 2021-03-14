@@ -1,0 +1,12 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "eslint-plugin-import"],
+    "rules": {
+     
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    ]
+  }
+  
