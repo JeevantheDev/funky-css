@@ -1,4 +1,4 @@
-import React, { ReactChildren, ReactChild } from "react";
+import React, { ReactChildren, ReactChild, useState } from "react";
 import styled from "styled-components";
 
 enum VARIANT {
@@ -53,7 +53,6 @@ const Box: React.FC<IProps> = ({
   style,
   children,
 }) => {
-  // console.log(color);
   const Box = styled.div`
     width: ${w};
     height: ${h};
