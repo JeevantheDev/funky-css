@@ -1,4 +1,4 @@
-import React, { ReactChildren, ReactChild, useEffect } from "react";
+import React, { ReactChildren, ReactChild } from "react";
 import styled from "styled-components";
 
 enum VARIANT {
