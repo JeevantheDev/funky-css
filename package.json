@@ -87,9 +87,5 @@
     "typescript": "^4.1.3",
     "web-vitals": "^0.2.4"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint"
-    }
-  }
+  "pre-commit": "pretty-quick --staged && npm run lint"
 }
