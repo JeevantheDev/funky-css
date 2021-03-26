@@ -1,13 +1,12 @@
 <h1 align="center">Funky <span>CSS</span></h1>
 
 > This project was bootstrapped with
-> Create React App
-> <img align="center" src="assets/cra.png" width="30">,
+> Create React App, Typescript
+> <img align="center" src="https://miro.medium.com/max/1024/1*Ukhx76VQ8E6JXEW7xfIzSA.png" width="50">,
 > Storybook
-> <img align="center" src="assets/storybook.png" width="30">,
-> Typescript <img align="center" src="assets/typescript.png" width="30">
+> <img align="center" src="https://user-images.githubusercontent.com/18430599/38112659-491f9112-3368-11e8-8b65-1725f19a61fa.png" width="40">
 > and
-> Styled-Components <img align="center" src="assets/styled-components.png" width="30">.
+> Styled-Components <img align="center" src="https://images.ctfassets.net/qcrphhesuv4n/6cZj9wicrfq7gQwyYy7RcI/9ec870532475e09f72bb1c7143a4564b/1_p1TndLk3UsGPBsM7qHPZIw.png?w=800&q=50" width="50">.
 
 ## Installing Funky CSS
 
