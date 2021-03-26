@@ -14,6 +14,8 @@
 To use Funky CSS components, all you need to do is install the @jeevanthedev/funky-css@<`version`> package and its peer dependencies:
 
 ```
+$ npm install styled-components
+$ npm install react-feather
 $ npm install @jeevanthedev/funky-css@<version> --registry=https://npm.pkg.github.com
 ```
 
