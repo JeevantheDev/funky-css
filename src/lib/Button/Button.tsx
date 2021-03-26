@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   PrimaryButton,
   SuccessButton,
   DangerButton,
   WarningButton,
-} from "./ButtonTypes";
-import styled from "styled-components";
+} from './ButtonTypes';
+import styled from 'styled-components';
 
 export interface IProps {
   style?: React.CSSProperties;
@@ -39,22 +39,22 @@ const Button: React.FC<IProps> = ({ color, text, onClick, style }) => {
 
   return (
     <>
-      {color === "primary" && (
+      {color === 'primary' && (
         <PrimaryButton style={style} onClick={onClick}>
           {text}
         </PrimaryButton>
       )}
-      {color === "success" && (
+      {color === 'success' && (
         <SuccessButton style={style} onClick={onClick}>
           {text}
         </SuccessButton>
       )}
-      {color === "danger" && (
+      {color === 'danger' && (
         <DangerButton style={style} onClick={onClick}>
           {text}
         </DangerButton>
       )}
-      {color === "warning" && (
+      {color === 'warning' && (
         <WarningButton style={style} onClick={onClick}>
           {text}
         </WarningButton>

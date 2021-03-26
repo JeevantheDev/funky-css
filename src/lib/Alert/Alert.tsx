@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 import {
   AlertOctagon,
   CheckCircle,
   AlertCircle,
   AlertTriangle,
-} from "react-feather";
-import styled from "styled-components";
+} from 'react-feather';
+import styled from 'styled-components';
 import {
   AlertPrimary,
   AlertSuccess,
   AlertDanger,
   AlertWarning,
-} from "./AlertTypes";
+} from './AlertTypes';
 
 export interface IProps {
   type?: string;
@@ -24,7 +24,7 @@ const Alert: React.FC<IProps> = ({ type, text, style }) => {
     if (text.length <= 50) {
       return text;
     } else {
-      return text.substring(0, 50) + "...";
+      return text.substring(0, 50) + '...';
     }
   };
 
@@ -51,33 +51,33 @@ const Alert: React.FC<IProps> = ({ type, text, style }) => {
     <>
       <Alert>
         <>
-          {type === "primary" && (
+          {type === 'primary' && (
             <AlertPrimary style={style}>
-              <AlertIcon>{type === "primary" && <AlertOctagon />}</AlertIcon>
+              <AlertIcon>{type === 'primary' && <AlertOctagon />}</AlertIcon>
               <AlertText>
                 <p>{renderText(text)}</p>
               </AlertText>
             </AlertPrimary>
           )}
-          {type === "success" && (
+          {type === 'success' && (
             <AlertSuccess style={style}>
-              <AlertIcon>{type === "success" && <CheckCircle />}</AlertIcon>
+              <AlertIcon>{type === 'success' && <CheckCircle />}</AlertIcon>
               <AlertText>
                 <p>{renderText(text)}</p>
               </AlertText>
             </AlertSuccess>
           )}
-          {type === "danger" && (
+          {type === 'danger' && (
             <AlertDanger style={style}>
-              <AlertIcon>{type === "danger" && <AlertCircle />}</AlertIcon>
+              <AlertIcon>{type === 'danger' && <AlertCircle />}</AlertIcon>
               <AlertText>
                 <p>{renderText(text)}</p>
               </AlertText>
             </AlertDanger>
           )}
-          {type === "warning" && (
+          {type === 'warning' && (
             <AlertWarning style={style}>
-              <AlertIcon>{type === "warning" && <AlertTriangle />}</AlertIcon>
+              <AlertIcon>{type === 'warning' && <AlertTriangle />}</AlertIcon>
               <AlertText>
                 <p>{renderText(text)}</p>
               </AlertText>

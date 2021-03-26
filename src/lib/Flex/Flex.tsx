@@ -1,5 +1,5 @@
-import React, { ReactChildren, ReactChild } from "react";
-import styled from "styled-components";
+import React, { ReactChildren, ReactChild } from 'react';
+import styled from 'styled-components';
 
 export interface IProps {
   style?: React.CSSProperties;
@@ -14,8 +14,8 @@ export interface IProps {
   pl?: number;
   pr?: number;
   color?: string;
-  h: string | "auto";
-  w: string | "auto";
+  h: string | 'auto';
+  w: string | 'auto';
   flexDirection?: string;
   justifyContent?: string;
   alignItems?: string;

@@ -1,12 +1,12 @@
-import React, { ReactChildren, ReactChild } from "react";
-import styled from "styled-components";
+import React, { ReactChildren, ReactChild } from 'react';
+import styled from 'styled-components';
 
 export interface IProps {
   templateColumns?: string;
   templateRows?: string;
   gap?: number;
-  h?: string | "auto";
-  w?: string | "auto";
+  h?: string | 'auto';
+  w?: string | 'auto';
   bg?: string;
   children?: ReactChild | ReactChildren;
   style?: React.CSSProperties;

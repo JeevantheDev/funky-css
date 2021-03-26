@@ -1,7 +1,9 @@
 {
   "name": "@jeevanthedev/funky-css",
-  "version": "0.2.2",
-  "dependencies": {},
+  "version": "0.2.3",
+  "dependencies": {
+    "@storybook/addon-jest": "^6.1.21"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -9,6 +11,9 @@
     "prepare-build": "npm run clean && cross-env NODE_ENV=production babel src/lib --out-dir dist --extensions \".ts,.tsx\" --ignore 'src/lib/**/*.test.js'",
     "copy": "cp package.json dist/ && cp README.md dist/",
     "build": "npm run prepare-build && npm run copy",
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\"",
     "lint": "eslint ./src"
   },
   "eslintConfig": {
@@ -33,11 +38,11 @@
     ]
   },
   "main": "index.js",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Funky CSS, create your react component reusable.",
   "directories": {
     "lib": "src/lib"
   },
-  "author": "",
+  "author": "JeevantheDev",
   "license": "ISC",
   "repository": {
     "type": "git",

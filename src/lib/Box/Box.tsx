@@ -1,11 +1,11 @@
-import React, { ReactChildren, ReactChild } from "react";
-import styled from "styled-components";
+import React, { ReactChildren, ReactChild } from 'react';
+import styled from 'styled-components';
 
 enum VARIANT {
-  primary = "primary",
-  success = "success",
-  danger = "danger",
-  warning = "warning",
+  primary = 'primary',
+  success = 'success',
+  danger = 'danger',
+  warning = 'warning',
 }
 
 export interface IProps {
@@ -20,7 +20,7 @@ export interface IProps {
   pl?: number;
   pr?: number;
   color?: VARIANT | string;
-  h?: string | "auto";
+  h?: string | 'auto';
   w?: string;
   flex?: number;
   alignSelf?: string;

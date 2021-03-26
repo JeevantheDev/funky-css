@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Box, { IProps } from "../lib/Box/Box";
-import Button from "../lib/Button/Button";
-import Flex from "../lib/Flex/Flex";
+import Box, { IProps } from '../lib/Box/Box';
+import Button from '../lib/Button/Button';
+import Flex from '../lib/Flex/Flex';
 
 export default {
-  title: "Example/Box",
+  title: 'Example/Box',
   component: Box,
 } as Meta;
 
@@ -15,10 +15,10 @@ const Template: Story<IProps> = (args) => <Box {...args} />;
 
 export const Card = Template.bind({});
 Card.args = {
-  color: "primary",
-  w: "25vw",
-  h: "60vh",
-  style: { color: "white", overflow: "hidden" },
+  color: 'primary',
+  w: '25vw',
+  h: '60vh',
+  style: { color: 'white', overflow: 'hidden' },
   children: [
     <>
       <Flex
@@ -28,7 +28,7 @@ Card.args = {
         justifyContent="space-between"
       >
         <>
-          <Box flex={2} w="25%" h="50%" style={{ backgroundColor: "#333" }}>
+          <Box flex={2} w="25%" h="50%" style={{ backgroundColor: '#333' }}>
             <Flex
               w="100%"
               h="100%"
@@ -64,9 +64,9 @@ Card.args = {
 
 export const Primary = Template.bind({});
 Primary.args = {
-  color: "primary",
-  w: "10%",
-  h: "20%",
+  color: 'primary',
+  w: '10%',
+  h: '20%',
   children: [
     <>
       <h3>Hello Primary Box</h3>
@@ -75,10 +75,10 @@ Primary.args = {
 };
 export const Success = Template.bind({});
 Success.args = {
-  color: "success",
-  w: "10%",
-  h: "20%",
-  style: { color: "red" },
+  color: 'success',
+  w: '10%',
+  h: '20%',
+  style: { color: 'red' },
   children: [
     <>
       <h3>Hello Success Box</h3>
@@ -88,9 +88,9 @@ Success.args = {
 
 export const Danger = Template.bind({});
 Danger.args = {
-  color: "danger",
-  w: "10%",
-  h: "20%",
+  color: 'danger',
+  w: '10%',
+  h: '20%',
   children: [
     <>
       <h3>Hello Danger Box</h3>
@@ -100,9 +100,9 @@ Danger.args = {
 
 export const Warning = Template.bind({});
 Warning.args = {
-  color: "warning",
-  w: "10%",
-  h: "20%",
+  color: 'warning',
+  w: '10%',
+  h: '20%',
   children: [
     <>
       <h3>Hello Warning Box</h3>
@@ -112,10 +112,10 @@ Warning.args = {
 
 export const Random = Template.bind({});
 Random.args = {
-  color: "random",
-  w: "30%",
-  h: "60%",
-  style: { backgroundColor: "#333", color: "white" },
+  color: 'random',
+  w: '30%',
+  h: '60%',
+  style: { backgroundColor: '#333', color: 'white' },
   children: [
     <>
       <h3>Hello Random Box</h3>
