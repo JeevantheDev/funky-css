@@ -1,5 +1,4 @@
 import React from 'react';
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import Grid, { IProps } from '../lib/Grid/Grid';
@@ -14,28 +13,57 @@ const Template: Story<IProps> = (args) => <Grid {...args} />;
 
 export const GridBox = Template.bind({});
 GridBox.args = {
-  templateRows: 'repeat(3, 1fr)',
-  templateColumns: 'repeat(5, 1fr)',
-  gap: 5,
-  style: { backgroundColor: 'cyan' },
-  w: '100%',
-  h: '100vh',
+  templateRows: 'repeat(2, 1fr)',
+  templateColumns: 'repeat(4, 1fr)',
+  gap: '0.5rem',
+  style: { backgroundColor: '#ccc', padding: '10px' },
+
   children: [
     <>
-      <Box start={1} colEnd={6} color="warning">
-        <h3>Hello Warning Box</h3>
+      <Box p={10} color="warning">
+        <h2>Hello Warning Box 1</h2>
       </Box>
-      <Box start={2} rowEnd={4} colEnd={1} color="primary">
-        <h3>Hello Primary Box</h3>
+      <Box p={10} color="primary">
+        <h2>Hello Primary Box 2</h2>
       </Box>
-      <Box start={2} colEnd={4} color="success">
-        <h3>Hello Success Box</h3>
+      <Box p={10} color="success">
+        <h2>Hello Success Box 3</h2>
       </Box>
-      <Box start={4} colEnd={6} color="primary">
-        <h3>Hello Random Box</h3>
+      <Box p={10} color="primary">
+        <h2>Hello Random Box 4</h2>
       </Box>
-      <Box start={2} colEnd={6} color="danger">
-        <h3>Hello Danger Box</h3>
+      <Box p={10} color="danger">
+        <h2>Hello Danger Box 5</h2>
+      </Box>
+      <Box p={10} color="warning">
+        <h2>Hello Warning Box 1</h2>
+      </Box>
+      <Box p={10} color="primary">
+        <h2>Hello Primary Box 2</h2>
+      </Box>
+      <Box p={10} color="success">
+        <h2>Hello Success Box 3</h2>
+      </Box>
+      <Box p={10} color="primary">
+        <h2>Hello Random Box 4</h2>
+      </Box>
+      <Box p={10} start={2} colEnd={5} color="danger">
+        <h2>Hello Danger Box 5</h2>
+      </Box>
+      <Box p={10} start={1} colEnd={3} color="warning">
+        <h2>Hello Warning Box</h2>
+      </Box>
+      <Box p={10} start={3} colEnd={5} color="primary">
+        <h2>Hello Primary Box</h2>
+      </Box>
+      <Box p={10} start={1} colEnd={3} color="success">
+        <h2>Hello Success Box</h2>
+      </Box>
+      <Box p={10} start={3} colEnd={5} color="primary">
+        <h2>Hello Random Box</h2>
+      </Box>
+      <Box p={10} start={1} colEnd={5} color="danger">
+        <h2>Hello Danger Box</h2>
       </Box>
     </>,
   ],

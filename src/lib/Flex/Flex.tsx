@@ -70,9 +70,6 @@ const Flex: React.FC<IProps> = ({
     align-self: ${alignSelf};
     flex-wrap: ${flexWrap};
     font-family: ${(props) => props.theme.fontFamily};
-    @media screen and (max-width: 800px) {
-      flex-direction: column;
-    }
   `;
 
   return <Flexbox style={style}>{children}</Flexbox>;

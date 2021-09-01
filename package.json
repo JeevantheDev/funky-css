@@ -1,6 +1,6 @@
 {
   "name": "@jeevanthedev/funky-css",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "dependencies": {
     "@storybook/addon-jest": "^6.1.21"
   },

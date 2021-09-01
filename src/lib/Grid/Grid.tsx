@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export interface IProps {
   templateColumns?: string;
   templateRows?: string;
-  gap?: number;
+  gap?: string;
   h?: string | 'auto';
   w?: string | 'auto';
   bg?: string;
@@ -27,9 +27,9 @@ const Grid: React.FC<IProps> = ({
     font-family: ${(props) => props.theme.fontFamily};
     grid-template-columns: ${templateColumns};
     grid-template-rows: ${templateRows};
-    grid-gap: ${gap}px;
-    width: ${w};
-    height: ${h};
+    grid-gap: ${gap};
+    width: ${w || '100%'};
+    height: ${h || '100%'};
     background-color: ${bg};
   `;
 
